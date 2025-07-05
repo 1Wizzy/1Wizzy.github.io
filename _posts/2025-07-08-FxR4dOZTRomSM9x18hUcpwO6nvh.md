@@ -1,6 +1,6 @@
 ---
 title: Distributed Consensus Algorithm for Exam
-date: 2025-07-08 00:00
+date: 2025-07-06 00:00
 categories: [TOP_CATEGORY, SUB_CATEGORY]
 tags: [TAG]     # TAG names should always be lowercase
 ---
