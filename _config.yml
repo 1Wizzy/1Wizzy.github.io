@@ -215,6 +215,7 @@ exclude:
   - purgecss.js
   - "*.config.js"
   - "package*.json"
+  - feishu2md
 
 jekyll-archives:
   enabled: [categories, tags]
