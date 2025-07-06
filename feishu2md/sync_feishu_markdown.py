@@ -130,7 +130,7 @@ def feishu2md(appId, appSecret, file_path):
 
     # Download Markdown File
     ## set config
-    setConfigCommand = ["./feishu2md", "config", "--appId", appId, "--appSecret", appSecret]
+    setConfigCommand = ["feishu2md/feishu2md", "config", "--appId", appId, "--appSecret", appSecret]
     runProcess(setConfigCommand)
 
     ## download every md file
