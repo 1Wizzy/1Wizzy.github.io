@@ -20,5 +20,7 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: print working directory
-        run: pwd
+      - name: 🧭 打印当前目录和文件列表
+        run: |
+          pwd
+          ls -al
