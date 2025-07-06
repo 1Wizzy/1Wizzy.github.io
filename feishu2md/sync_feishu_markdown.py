@@ -35,10 +35,10 @@ tags: {document_info.tags}
 def sync_markdown_file(document_token, document_info):
     ## set path and var
     filename = f"{document_info.date.split(' ')[0]}-{document_token}.md"
-    os.rename(f"./{document_token}.md", f"./{filename}")
+    os.rename(f"feishu2md/{document_token}.md", f"feishu2md/{filename}")
 
-    target_path = os.path.join("/_posts", filename)
-    md_path = os.path.join("./", filename)
+    target_path = os.path.join("_posts", filename)
+    md_path = os.path.join("feishu2md", filename)
     front_matter = build_front_matter(document_info)
 
     ## read source file content
@@ -75,8 +75,8 @@ def sync_markdown_file(document_token, document_info):
     print(f"✅ Synced and pushed: {filename}")
 
 def sync_static_file():
-    src_dir = "./static"
-    dst_dir = "/static"
+    src_dir = "feishu2md/static"
+    dst_dir = "static"
     for root, _, files in os.walk(src_dir):
         rel_path = os.path.relpath(root, src_dir)
         target_root = os.path.join(dst_dir, rel_path) if rel_path != "." else dst_dir
@@ -100,7 +100,7 @@ def sync_static_file():
 
         # 2. 判断是否有改动
         ## 先 git add static
-        subprocess.run(["git", "add", "/static"], check=True)
+        subprocess.run(["git", "add", "static"], check=True)
 
         ## 用 git diff --cached 判断是否有暂存改动
         result = subprocess.run(["git", "diff", "--cached", "--quiet"])
@@ -136,7 +136,7 @@ def feishu2md(appId, appSecret, file_path):
     ## download every md file
     for document_token, document_info in Document_Info.items():
         url = f"https://g8s2ogdg6r.feishu.cn/docx/{document_token}"
-        downloadCommand = ["./feishu2md", "dl", url]
+        downloadCommand = ["feishu2md/feishu2md", "dl", url]
         runProcess(downloadCommand)
         sync_markdown_file(document_token, document_info )
     sync_static_file()
@@ -144,6 +144,6 @@ def feishu2md(appId, appSecret, file_path):
 if __name__ == "__main__":
     appId = os.environ.get('appId')
     appSecret = os.environ.get('appSecret')
-    file_path = './Document_Info.json'
+    file_path = 'feishu2md/Document_Info.json'
     feishu2md(appId, appSecret, file_path)
     
