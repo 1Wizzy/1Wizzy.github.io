@@ -3,9 +3,10 @@
 [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
 [![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
 
-## Usage
+## 本项目所用到的开源项目
 
-Check out the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy/wiki).
+[theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy/wiki)
+[feishu2md](https://github.com/Wsine/feishu2md)
 
 ## License
 
