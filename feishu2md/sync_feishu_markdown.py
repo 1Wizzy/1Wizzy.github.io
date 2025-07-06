@@ -24,17 +24,17 @@ def runProcess(command):
 
 def build_front_matter(document_info):
         return f"""---
-title: "{document_info["title"]}"
-date: {document_info["date"]}
-categories: {document_info["categories"]}
-tags: {document_info["tags"]}
+title: "{document_info['title']}"
+date: {document_info['date']}
+categories: {document_info['categories']}
+tags: {document_info['tags']}
 ---
 
 """
 
 def sync_markdown_file(document_token, document_info):
     ## set path and var
-    filename = f"{document_info["date"].split(' ')[0]}-{document_token}.md"
+    filename = f"{document_info['date'].split(' ')[0]}-{document_token}.md"
     os.rename(f"feishu2md/{document_token}.md", f"feishu2md/{filename}")
 
     target_path = os.path.join("_posts", filename)
