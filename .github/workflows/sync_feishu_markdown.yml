@@ -21,4 +21,4 @@ jobs:
           python-version: '3.10'
 
       - name: 🚀 运行同步脚本
-        run: python /feishu2md/sync_feishu_markdown.py  
+        run: python feishu2md/sync_feishu_markdown.py  
