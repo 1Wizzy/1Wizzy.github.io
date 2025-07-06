@@ -76,13 +76,13 @@ def sync_markdown_file(document_token, document_info):
     subprocess.run(["git", "push"], check=True)
     print(f"✅ Synced and pushed: {filename}")
 
-def sync_static_file():
+# def sync_static_file():
     # 指定目录路径
-    directory = "feishu2md/static"
+    # directory = "static"
 
     # 遍历目录
-    for entry in os.listdir(directory):
-        print(entry)
+    # for entry in os.listdir(directory):
+    #     print(entry)
     # src_dir = "feishu2md/static"
     # dst_dir = "static"
     # for root, _, files in os.walk(src_dir):
@@ -124,6 +124,26 @@ def sync_static_file():
     #     subprocess.run(["git", "commit", "-m", "🤖 自动同步 static 目录文件"], check=True)
     #     subprocess.run(["git", "push"], check=True)
     #     print("✅ static 目录已提交并推送。")
+
+def sync_static_file():
+    # 1. 添加 static 目录变更到暂存区
+    subprocess.run(["git", "add", "static"], check=True)
+
+    # 2. 检查是否有暂存区变更（--quiet: 无变化则退出码为 0）
+    result = subprocess.run(["git", "diff", "--cached", "--quiet"])
+
+    if result.returncode == 0:
+        print("✅ static 目录无改动，无需提交。")
+        return
+
+    # 3. 配置 Git 用户信息（仅 GitHub Actions 必需）
+    subprocess.run(["git", "config", "user.name", "github-actions[bot]"], check=True)
+    subprocess.run(["git", "config", "user.email", "github-actions[bot]@users.noreply.github.com"], check=True)
+
+    # 4. commit + push
+    subprocess.run(["git", "commit", "-m", "📦 sync: 更新 static 目录内容"], check=True)
+    subprocess.run(["git", "push"], check=True)
+    print("✅ static 目录已提交并推送。")
 
 
 def feishu2md(appId, appSecret, file_path):
