@@ -35,10 +35,12 @@ tags: {document_info['tags']}
 def sync_markdown_file(document_token, document_info):
     ## set path and var
     filename = f"{document_info['date'].split(' ')[0]}-{document_token}.md"
-    os.rename(f"feishu2md/{document_token}.md", f"feishu2md/{filename}")
+    # os.rename(f"feishu2md/{document_token}.md", f"feishu2md/{filename}")
+    os.rename(f"{document_token}.md", f"{filename}") # feishu2md下载在根目录
 
     target_path = os.path.join("_posts", filename)
-    md_path = os.path.join("feishu2md", filename)
+    # md_path = os.path.join("feishu2md", filename)
+    md_path = os.path.join("", filename)# feishu2md下载在根目录
     front_matter = build_front_matter(document_info)
 
     ## read source file content
@@ -139,7 +141,7 @@ def feishu2md(appId, appSecret, file_path):
         downloadCommand = ["feishu2md/feishu2md", "dl", url]
         runProcess(downloadCommand)
         sync_markdown_file(document_token, document_info )
-    sync_static_file()
+    # sync_static_file()
 
 if __name__ == "__main__":
     appId = os.environ.get('appId')
