@@ -2,7 +2,10 @@ name: sync Feishu markdown
 
 on:
   workflow_dispatch:  # 手动触发
-
+  
+permissions:
+  contents: write  # 关键：允许推送权限
+  
 jobs:
   sync-feishu-docs:
     runs-on: ubuntu-latest
