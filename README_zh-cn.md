@@ -6,15 +6,21 @@
 
 整个项目基本实现了全流程CI/CD，可通过GithubAction自动下载文档，自动部署博客。
 
+## 下一步工作
+
+1. Chirpy 模板只渲染正文markdown中的h2~h6，故需修改从飞书上下载的markdown文件 ✅
+
+2. 修改从飞书下载的markdown文件的其他问题 ❎
+
 ## 本项目所用到的开源项目
 
 - [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy/wiki)
 
 - [feishu2md](https://github.com/Wsine/feishu2md)
 
-## License
+## 许可证
 
-This work is published under [MIT][mit] License.
+本项目以 [MIT][mit] License 发布.
 
 [gem]: https://rubygems.org/gems/jekyll-theme-chirpy
 [chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
