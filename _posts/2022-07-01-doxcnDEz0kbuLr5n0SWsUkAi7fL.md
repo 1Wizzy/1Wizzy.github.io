@@ -7,19 +7,19 @@ tags: ['Note', 'Algorithm', 'CPP']
 
 
 
-# Algorithm Note
+## Algorithm Note
 
-# DP(Dynamic Programming)
+## **DP(Dynamic Programming)**
 
-## 分类：
+### 分类：
 
-### 1.线性 dp
+#### 1.线性 dp
 
-#### Question:AcWing 271.杨老师的照相排列
+##### Question:AcWing 271.杨老师的照相排列
 
 Question Link:acwing.com/problem/content/273
 
-Question Difficulty Level:★☆☆☆☆
+Question Difficulty Level:★☆☆☆☆Tr
 
 Question Analysis:
 
@@ -70,7 +70,7 @@ int main()
 
 ---
 
-#### Question:AcWing 312.乌龟棋
+##### Question:AcWing 312.乌龟棋
 
 Question Link:acwing.com/problem/content/314
 
@@ -130,7 +130,7 @@ int main()
 
 ---
 
-#### Question:AcWing 898.数字三角形
+##### Question:AcWing 898.数字三角形
 
 Question Link:acwing.com/problem/content/900
 
@@ -182,7 +182,7 @@ int main()
 
 ---
 
-#### Question:AcWing 895. 最长上升子序列
+##### Question:AcWing 895. 最长上升子序列
 
 Question Link:[https://www.acwing.com/problem/content/897/](https://www.acwing.com/problem/content/897/)
 
@@ -221,7 +221,7 @@ int main()
 
 ---
 
-#### Question:AcWing 897. 最长公共子序列
+##### Question:AcWing 897. 最长公共子序列
 
 Question Link:[https://www.acwing.com/problem/content/899/](https://www.acwing.com/problem/content/899/)
 
@@ -257,7 +257,7 @@ int main()
 
 ---
 
-#### Question:AcWing 902. 最短编辑距离
+##### Question:AcWing 902. 最短编辑距离
 
 Question Link:[https://www.acwing.com/problem/content/904/](https://www.acwing.com/problem/content/904/)
 
@@ -296,7 +296,7 @@ int main()
 }
 ```
 
-### 2.区间 dp
+#### **2.区间 dp**
 
 顾名思义，区间 DP 即为在区间上求解最优值（DP）的问题
 
@@ -306,7 +306,7 @@ int main()
 
 一般循环方式为首先枚举区间长度，枚举左端点算出右端点
 
-#### Question:AcWing 284. 金字塔
+##### Question:AcWing 284. 金字塔
 
 Question Link:acwing.com/problem/content/286
 
@@ -363,7 +363,7 @@ int main()
 
 ---
 
-#### Question:AcWing 284. 金字塔
+##### Question:AcWing 284. 金字塔
 
 Question Link:acwing.com/problem/content/286
 
@@ -415,7 +415,7 @@ int main()
 
 ---
 
-#### Question:AcWing 282. 石子合并
+##### Question:AcWing 282. 石子合并
 
 Question Link:[https://www.acwing.com/problem/content/284/](https://www.acwing.com/problem/content/284/)
 
@@ -451,7 +451,7 @@ int main()
 }
 ```
 
-### 3.状态压缩 dp
+#### 3.状态压缩 dp
 
 状态压缩基本特征：用二进制表示状态，用十进制存储状态。
 
@@ -460,7 +460,7 @@ int main()
 3. 用位运算判断状态转移的条件;
 4. 计算时每个类累加上一行的兼容类。
 
-#### Question:AcWing 327. 玉米田
+##### Question:AcWing 327. 玉米田
 
 Question Link:acwing.com/problem/content/329
 
@@ -533,7 +533,7 @@ int main()
 
 ---
 
-#### Question:AcWing 1065. 涂抹果酱
+##### Question:AcWing 1065. 涂抹果酱
 
 Question Link:acwing.com/problem/content/1067
 
@@ -668,13 +668,13 @@ cout << ans << endl ;
 
 1. 有未知错误，但大致思路如此。
 
-### 4.树形 dp
+#### 4.树形 dp
 
 树形 DP 一般自底向上，将子树从小到大作为 DP 的“阶段”，将节点编号作为 DP 状态的第 1 维，代表以该节点为根的子树。
 
 树形 DP 一般采用深度优先遍历，递归求解每棵子树，回溯时从子节点向上进行状态转移。在当前节点的所有子树都求解完毕后，才可以求解当前节点。
 
-#### Question:AcWing 285. 没有上司的舞会
+##### Question:AcWing 285. 没有上司的舞会
 
 Question Link:acwing.com/problem/content/287
 
@@ -737,7 +737,7 @@ int main()
 }
 ```
 
-### 5.数位 dp
+#### 5.数位 dp
 
 Kinds Difficulty Level:★★★★★
 
@@ -750,7 +750,7 @@ Kinds Difficulty Level:★★★★★
 
 More details in Video BV1yT4y1u7jW/
 
-#### Question:AcWing 1081.度的数量
+##### Question:AcWing 1081.度的数量
 
 Question Link:acwing.com/problem/content/1083
 
@@ -828,7 +828,7 @@ int main()
 
 ---
 
-#### Question:AcWing 1082.数字游戏
+##### Question:AcWing 1082.数字游戏
 
 Question Link:acwing.com/problem/content/1084
 
@@ -895,7 +895,7 @@ int main()
 
 ---
 
-#### Question:AcWing 1083.Windy 数
+##### Question:AcWing 1083.Windy 数
 
 Question Link:acwing.com/problem/content/1085
 
@@ -960,7 +960,7 @@ int main()
 
 ---
 
-#### Question:AcWing 1084.数字游戏 Ⅱ
+##### Question:AcWing 1084.数字游戏 Ⅱ
 
 Question Link:acwing.com/problem/content/1086
 
@@ -1026,7 +1026,7 @@ int main()
 
 ---
 
-#### Question:AcWing 1085.不要 62
+##### Question:AcWing 1085.不要 62
 
 Question Link:acwing.com/problem/content/1086
 
@@ -1104,7 +1104,7 @@ int main()
 
 ---
 
-#### Question:AcWing 1081.恨 7 不成妻
+##### Question:AcWing 1081.恨 7 不成妻
 
 Question Link:acwing.com/problem/content/1088
 
@@ -1216,9 +1216,9 @@ int main()
 }
 ```
 
-### 6.计数 dp
+#### 6.计数 dp
 
-#### Question:AcWing 900. 整数划分
+##### Question:AcWing 900. 整数划分
 
 Question Link:[https://www.acwing.com/problem/content/902/](https://www.acwing.com/problem/content/902/)
 
@@ -1249,9 +1249,9 @@ int main()
 }
 ```
 
-## 背包九讲
+### 背包九讲
 
-### 01 背包问题
+#### 01 背包问题
 
 Question Link: [2. 01 背包问题 - AcWing 题库](https://www.acwing.com/problem/content/2/)
 
@@ -1311,7 +1311,7 @@ int main()
 }
 ```
 
-### 完全背包问题
+#### 完全背包问题
 
 Question Link: [3. 完全背包问题 - AcWing 题库](https://www.acwing.com/problem/content/3/)
 
@@ -1402,7 +1402,7 @@ int main()
 }
 ```
 
-### 多重背包问题
+#### 多重背包问题
 
 Question Link: [4. 多重背包问题 I - AcWing 题库](https://www.acwing.com/problem/content/4/)
 
@@ -1483,7 +1483,7 @@ int main()
 }
 ```
 
-### 分组背包问题
+#### 分组背包问题
 
 Question Link: [9. 分组背包问题 - AcWing 题库](https://www.acwing.com/problem/content/9/)
 
@@ -1553,17 +1553,17 @@ int main()
 }
 ```
 
-## Model
+### Model
 
-### 数字三角形
+#### 数字三角形
 
-### 最长上升子序列(Longest Incresing Subsequence)
+#### 最长上升子序列(Longest Incresing Subsequence)
 
-## Dynamic Programming Method
+### Dynamic Programming Method
 
-### 由当前状态向后面状态转移
+#### 由当前状态向后面状态转移
 
-#### Question： AcWing 4741. 魔法百合井
+##### Question： AcWing 4741. 魔法百合井
 
 Question Link: [4741. 魔法百合井 - AcWing 题库](https://www.acwing.com/problem/content/4744/)
 
@@ -1601,30 +1601,30 @@ int main()
 }
 ```
 
-# 倍增思想
+## **倍增思想**
 
 倍增法，意为成倍增长。
 在进行递推时，如果状态空间很大，通常的线性递推无法满足时间与空间复杂度的要求，那么我们可以通过成倍(通常以 2 作为基底)增长的方式，它能够使线性的处理转化为对数级的处理，大大地优化时间复杂度。
 
-## 2 的幂的优化
+### 2 的幂的优化
 
 ```cpp
 2^n=(1<<(n))
 ```
 
-# IDA\*
+## **IDA***
 
-## 一、概念
+### **一、概念**
 
 简单的说，IDA *算法就是迭代加深版的 A* 算法
 
-## 二、分析
+### **二、分析**
 
 设计一个估价函数$f(state)<=真实步数$
 
 若 $当前步数 + f(state) > 上界$ 真实步数必然大于上界，可以提前退出
 
-## 三、模板代码
+### 三、模板代码
 
 ```cpp
 bool dfs()
@@ -1635,9 +1635,9 @@ int depth=0;
 while(!dfs(0,depth)) depth++;
 ```
 
-## 四、示例代码
+### 四、示例代码
 
-### Question:AcWing 180.排书
+#### Question:AcWing 180.排书
 
 Question Link:acwing.com/problem/content/182
 
@@ -1745,7 +1745,7 @@ Diagram:
 
 ---
 
-### Question:AcWing 181.回转游戏
+#### Question:AcWing 181.回转游戏
 
 Question Link:acwing.com/problem/content/183
 
@@ -1861,7 +1861,7 @@ int main()
 
 ---
 
-### Question:AcWing 182.破坏正方形
+#### Question:AcWing 182.破坏正方形
 
 Question Link:acwing.com/problem/content/184
 
@@ -2010,7 +2010,7 @@ int main()
 
 ---
 
-### Question:AcWing 195.骑士精神
+#### Question:AcWing 195.骑士精神
 
 Question Link:acwing.com/problem/content/197
 
@@ -2104,9 +2104,9 @@ int main()
 }
 ```
 
-# 区间合并
+## **区间合并**
 
-## 一、步骤
+### **一、步骤**
 
 1. 将所有区间按左端点从小到大排序
 2. 从左到右遍历每个区间，去维护一个当前区间 $[ L , R ]$
@@ -2114,11 +2114,11 @@ int main()
 1) $l[i] =< R$       $R=max( R , r[i] )$;
 2) $l[i] > R$        则将 当前区间 $[ L , R ]$ 存下，然后维护$[ l[i] , r[i] ]$
 
-## 二、时间复杂度：O(nlogn)
+### **二、时间复杂度：O(nlogn)**
 
-## 三、实例代码
+### **三、实例代码**
 
-### Question:AcWing 422.校门外的树
+#### Question:AcWing 422.校门外的树
 
 Question Link:acwing.com/problem/content/424
 
@@ -2170,19 +2170,19 @@ int main()
 }
 ```
 
-# 快速幂(FastPow)
+## **快速幂(FastPow)**
 
-## 一、概念
+### **一、概念**
 
 顾名思义即快速计算幂的方法
 
-## 二、原理
+### **二、原理**
 
 每个数均有二进制的表达方式，例如 十进制 52647 的 二进制 为  $1100 \ 1101\  1010\  0111$ 即 $2^{15}+2^{14}+2^{11}+2^{10}+2^8+2^7+2^5+2^2+2^1+2^0=52647$
 
 ![](static/boxcnj5Tm1obLKtuUadk8MRTiFb.png)
 
-## 三、模板代码
+### **三、模板代码**
 
 ```cpp
 /*运用位运算符*/
@@ -2221,11 +2221,11 @@ int fastpow(int m, int k, int p)
 
 Tips:$1 << n$等价于$2^n$
 
-## 四、快速幂的拓展
+### 四、快速幂的拓展
 
 快速幂采用了倍增的思想可以拓展至有结合律的运算
 
-### Question AcWing 205. 斐波那契
+#### Question AcWing 205. 斐波那契
 
 Question Link:[205. 斐波那契 - AcWing 题库](https://www.acwing.com/problem/content/207/)
 
@@ -2311,11 +2311,11 @@ int qmi(int a, int k, int p)
 }
 ```
 
-# 二分法
+## **二分法**
 
-## 一、概念
+### **一、概念**
 
-## 二、模板代码
+### **二、模板代码**
 
 二分模板一共有两个，分别适用于不同情况。
 
@@ -2361,9 +2361,9 @@ Tips:
 x >> 1         <=>         x / 2
 ```
 
-## 三、实例代码
+### **三、实例代码**
 
-### Question:AcWing 422.校门外的树
+#### Question:AcWing 422.校门外的树
 
 Question Link:acwing.com/problem/content/424
 
@@ -2416,13 +2416,13 @@ int main()
 
 ---
 
-## 四、手写实现二分 STL
+### 四、手写实现二分 STL
 
 For the exam which cannot use STL;
 
 Based on yxc's template;
 
-### lower_bound
+#### lower_bound
 
 ```cpp
 // array is in ascending order
@@ -2442,7 +2442,7 @@ int LowerBound(int w[], int n, int val)
 }
 ```
 
-### upper_bound
+#### upper_bound
 
 ```cpp
 // array is in ascending order
@@ -2462,23 +2462,23 @@ int UpperBound(int w[], int n, int val)
 }
 ```
 
-# Floyd
+## **Floyd**
 
-## 一、概念
+### **一、概念**
 
 Floyd 算法又称为插点法，是一种利用[动态规划](https://baike.baidu.com/item/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/529408)的思想寻找给定的[加权图](https://baike.baidu.com/item/%E5%8A%A0%E6%9D%83%E5%9B%BE/10579361)中多源点之间[最短路径](https://baike.baidu.com/item/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/6334920)的算法，与 [Dijkstra 算法](https://baike.baidu.com/item/Dijkstra%E7%AE%97%E6%B3%95/215612)类似。该算法名称以创始人之一、1978 年[图灵奖](https://baike.baidu.com/item/%E5%9B%BE%E7%81%B5%E5%A5%96/324645)获得者、[斯坦福大学](https://baike.baidu.com/item/%E6%96%AF%E5%9D%A6%E7%A6%8F%E5%A4%A7%E5%AD%A6/278716)计算机科学系教授[罗伯特·弗洛伊德](https://baike.baidu.com/item/%E7%BD%97%E4%BC%AF%E7%89%B9%C2%B7%E5%BC%97%E6%B4%9B%E4%BC%8A%E5%BE%B7/4903135)命名。
 
-## 二、特色
+### **二、特色**
 
 1. 本算法边权可正可负
 2. 可以求任意两点间的最短路径
 3. 不允许有包含带负权值的边组成的**回路**
 
-## **三、时间复杂度：**$O(n^3)$
+### **三、时间复杂度：**$O(n^3)$
 
-## **四、空间复杂度：**$O(n²)$
+### **四、空间复杂度：**$O(n²)$
 
-## 五、模板代码
+### **五、模板代码**
 
 需要注意循环顺序不能变：第一层枚举中间点，第二层和第三层枚举起点和终点。
 
@@ -2494,9 +2494,9 @@ for (int k = 1; k <= n; k++)
 
 换言之：对于从 $i → j$ 存不存在一条更近的路经过 $k$ **中转**而到达 $j$ 即：$i → k → j$
 
-## 六、示例代码
+### **六、示例代码**
 
-### Question:AcWing 1471.牛奶工厂
+#### Question:AcWing 1471.牛奶工厂
 
 Question Link:acwing.com/problem/content/1473
 
@@ -2558,7 +2558,7 @@ int main()
 
 ---
 
-### Question:AcWing 1375.奶牛回家
+#### Question:AcWing 1375.奶牛回家
 
 Question Link:acwing.com/problem/content/1377
 
@@ -2615,22 +2615,22 @@ int main()
 }
 ```
 
-# Dijkstra
+## **Dijkstra**
 
-## 一、概念
+### **一、概念**
 
 迪杰斯特拉算法(Dijkstra)是由荷兰计算机[科学家](https://baike.baidu.com/item/%E7%A7%91%E5%AD%A6%E5%AE%B6/1210114)[狄克斯特拉](https://baike.baidu.com/item/%E7%8B%84%E5%85%8B%E6%96%AF%E7%89%B9%E6%8B%89/2828872)于 1959 年提出的，因此又叫狄克斯特拉算法。是从一个顶点到其余各顶点的[最短路径](https://baike.baidu.com/item/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/6334920)算法，解决的是有权图中最短路径问题。迪杰斯特拉算法主要特点是从起始点开始，采用[贪心算法](https://baike.baidu.com/item/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/5411800)的[策略](https://baike.baidu.com/item/%E7%AD%96%E7%95%A5/4006)，每次遍历到始点距离最近且未访问过的顶点的邻接节点，直到扩展到终点为止。
 
-## 二、特色
+### **二、特色**
 
 1. 本算法边权不可为负。
 2. 可以求出起点到任意点的最短路径及其路径。(路径需要特殊处理)
 
-## **三、时间复杂度：朴素：**$O(n²)$** 堆优化：**$O(mlog(n))$
+### **三、时间复杂度：朴素：**$O(n²)$** 堆优化：**$O(mlog(n))$
 
-## **四、空间复杂度：**$O(n²)$
+### **四、空间复杂度：**$O(n²)$
 
-## 五、模板代码
+### 五、模板代码
 
 1. 朴素
 
@@ -2753,9 +2753,9 @@ int main()
 }
 ```
 
-## 六、实例代码
+### **六、实例代码**
 
-### Question:AcWing 849.Dijkstra 求最短路 I
+#### Question:AcWing 849.Dijkstra 求最短路 I
 
 Question Link:acwing.com/problem/content/851
 
@@ -2918,7 +2918,7 @@ memset(str,0x3f,sizeof str);
 
 ---
 
-### Question:AcWing 1375.奶牛回家
+#### Question:AcWing 1375.奶牛回家
 
 Question Link:acwing.com/problem/content/1377
 
@@ -2987,22 +2987,22 @@ int main()
     return 0;
 ```
 
-# Bellman-Ford
+## **Bellman-Ford**
 
-## 一、概念
+### **一、概念**
 
 **贝尔曼-福特算法**（Bellman-Ford）是由[理查德·贝尔曼](https://baike.baidu.com/item/%E7%90%86%E6%9F%A5%E5%BE%B7%C2%B7%E8%B4%9D%E5%B0%94%E6%9B%BC/10233415)（Richard Bellman） 和 莱斯特·福特 创立的，求解单源[最短路径](https://baike.baidu.com/item/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84)问题的一种[算法](https://baike.baidu.com/item/%E7%AE%97%E6%B3%95/209025)。有时候这种算法也被称为 Moore-Bellman-Ford 算法，因为 Edward F. Moore 也为这个算法的发展做出了贡献。它的原理是对图进行 V-1 次松弛操作，得到所有可能的最短路径。其优于[迪科斯彻算法](https://baike.baidu.com/item/%E8%BF%AA%E7%A7%91%E6%96%AF%E5%BD%BB%E7%AE%97%E6%B3%95/8595939)的方面是边的权值可以为负数、实现简单，缺点是时间复杂度过高，高达$O(VE)$。但算法可以进行若干种优化，提高了效率。
 
-## 二、特色
+### **二、特色**
 
 1. 求单源最短路径
 2. 有向图和无向图均可
 3. 边权可正可负
 4. 可以解决有边数限制的最短路
 
-## 三、模板代码
+### **三、模板代码**
 
-### Templated Question:AcWing 853.有边数限制的最短路
+#### Templated Question:AcWing 853.有边数限制的最短路
 
 Templated Question Link:acwing.com/problem/content/855
 
@@ -3096,21 +3096,21 @@ $$
 No.2\quad dist[1]=0\quad dist[2]=1\quad dist[3]=3
 $$
 
-## 四、实例代码
+### **四、实例代码**
 
-# SPFA
+## **SPFA**
 
-## 一、概念
+### **一、概念**
 
 **SPFA (Shortest Path Faster Algorithm）**算法是** Bellman-Ford**算法的队列优化算法，通常用于求解含负权边的单源最短路径,以及判负环。在最坏情况下，SPFA 算法的时间复杂度和 Bellman-Ford 算法相同，为$O(nm)$;但在稀疏图上运行效率较高，为$O(km)$，其中$k$是一个较小的常数。
 
-## 二、特色
+### **二、特色**
 
 1. 无法计算含有负权回路的最短路径问题
 
-## 三、模板代码
+### **三、模板代码**
 
-### Templated Question:AcWing 851.spfa 求最短路
+#### Templated Question:AcWing 851.spfa 求最短路
 
 Templated Question Link:acwing.com/problem/content/853
 
@@ -3180,15 +3180,15 @@ int main()
 }
 ```
 
-# 最短路径问题总结
+## 最短路径问题总结
 
 首先约定 `n是点数` `m是边数`
 
 源点：起点         汇点：终点
 
-# 二分图
+## 二分图
 
-## 定义
+### 定义
 
 将所有点分成两个集合，使得所有边只出现在集合之间，就是二分图
 
@@ -3203,11 +3203,11 @@ int main()
 ![](static/boxcn3Y7rpioKHViJ4FL8TZd68g.png)
 ![](static/boxcnoLUk9BozIR3zMWqsXRKOqe.png)
 
-# 前缀和
+## 前缀和
 
-## 一维前缀和
+### 一维前缀和
 
-## 二维前缀和
+### 二维前缀和
 
 首先，我们令某点的值为此点左上角的所有值，用面积的思想来说，即为此点的值为其左上矩形的面积
 
@@ -3238,7 +3238,7 @@ $$
 s[i][j] = s[i - 1][j] + s[i][j - 1] - s[i-1][j - 1]
 $$
 
-### Question:AcWing 99. 激光炸弹
+#### Question:AcWing 99. 激光炸弹
 
 Question Link:[www.acwing.com/problem/content/101](http://www.acwing.com/problem/content/101)
 
@@ -3284,9 +3284,9 @@ int main()
 }
 ```
 
-# 差分
+## 差分
 
-## 一、概念
+### 一、概念
 
 于计算机数据结构与算法以侠义理解来说，差分经常运用于数组中**前一项 ➖ 后一项 **or** 后一项 ➖ 前一项，**对**差分数组**求**前缀和**即可得到原数组，例如有
 
@@ -3298,7 +3298,7 @@ int main()
 
 我们可以不用考虑差分数组的构造，而是把对于一个区间内的加减操作认为插入原数据来构成差分数组
 
-## 二、常见问题
+### 二、常见问题
 
 1. 对于指定区间的每个元素进行加减操作
 
@@ -3335,9 +3335,9 @@ for(int i = 2; i <= n; i ++)
 }
 ```
 
-## 三、示例代码
+### 三、示例代码
 
-### Question:AcWing 101. 最高的牛
+#### Question:AcWing 101. 最高的牛
 
 Question Link:[www.acwing.com/problem/content/103/](http://www.acwing.com/problem/content/103/)
 
@@ -3382,7 +3382,7 @@ int main()
 
 ---
 
-### Question:736. 安迪种树
+#### Question:736. 安迪种树
 
 Question Link:[www.acwing.com/problem/content/738/](http://www.acwing.com/problem/content/738/)
 
@@ -3421,7 +3421,7 @@ int main()
 
 ---
 
-### Question:AcWing 100. 增减序列
+#### Question:AcWing 100. 增减序列
 
 Question Link:[www.acwing.com/problem/content/102](http://www.acwing.com/problem/content/102)
 
@@ -3461,7 +3461,7 @@ int main()
 }
 ```
 
-## 四、二维差分数组
+### 四、二维差分数组
 
 插入操作
 
@@ -3487,17 +3487,17 @@ for(int i = 1; i <= n; i ++)
       b[i][j] += b[i - 1][j] + b[i][j - 1] - b[i - 1][j - 1];
 ```
 
-# Prim
+## **Prim**
 
-## 一、概念
+### **一、概念**
 
 主要用于解决 Minimum Spanning Trees(最小生成树)问题，Prim 算法的基本想法是种一棵树让它从 1 个节点增长到 n 个节点
 
-## 二、特色
+### **二、特色**
 
 与 Dijkstra 算法有些相似。即先确定一个最小长度的边，用此边长度更新其他边长度，再确定一个最小长度的边，直至遍历了每条边
 
-## 三、模板代码
+### **三、模板代码**
 
 ```cpp
 const int N=1005,INF=0x3f3f3f3f;
@@ -3529,9 +3529,9 @@ int prim()
 }
 ```
 
-## 四、示例代码
+### **四、示例代码**
 
-### Question:LaoQiao C/C++ Group B 2020.4 9.通电
+#### Question:LaoQiao C/C++ Group B 2020.4 9.通电
 
 Question Link:blog.csdn.net/Cyril_KI/article/details/108369516
 
@@ -3600,9 +3600,9 @@ int main()
 }
 ```
 
-# Kruskal
+## **Kruskal**
 
-## 一、概念
+### **一、概念**
 
 主要用于解决 Minimum Spanning Trees(最小生成树)问题。
 
@@ -3610,7 +3610,7 @@ Kruskal 算法的主要思想是 先选择权值较小的边，检查是否存�
 
 在检查回路时，通常运用并查集。
 
-## 二、模板代码
+### **二、模板代码**
 
 ```cpp
 const int N=1005;//Nodes Count
@@ -3665,9 +3665,9 @@ int main()
 }
 ```
 
-## 三、示例代码
+### **三、示例代码**
 
-### Question:LaoQiao C/C++ Group B 2020.4 9.通电
+#### Question:LaoQiao C/C++ Group B 2020.4 9.通电
 
 Question Link:blog.csdn.net/Cyril_KI/article/details/108369516
 
@@ -3752,35 +3752,35 @@ int main()
 }
 ```
 
-# 最小生成树问题总结
+## 最小生成树问题总结
 
-# 哈夫曼树及求其 WPL 算法
+## 哈夫曼树及求其 WPL 算法
 
-## 一、概念
+### 一、概念
 
 给定$N$个权值**作为** $N$个叶子结点，构造一棵**二叉树**  ，若该树的带权路径长度达到**最小** ，称这样的**二叉树** 为**最优二叉树** ，也称为**哈夫曼树(Huffman Tree)** 。哈夫曼树是带权路径长度最短的树，权值较大的结点离根较近。
 
 > 霍夫曼树与哈夫曼树是一样的，只是音译的问题。
 
-## 二、相关知识
+### 二、相关知识
 
-### 1、路径和路径长度
+#### 1、路径和路径长度
 
 在一棵树中，从一个结点往下可以达到的孩子或孙子结点之间的通路，称为路径。通路中分支的数目称为路径长度。若规定根结点的层数为 1，则从根结点到第 $L$ 层结点的路径长度为 $L−1$。
 
-### 2、结点的权及带权路径长度
+#### 2、结点的权及带权路径长度
 
 若将树中结点赋给一个有着某种含义的数值，则这个数值称为该结点的权。结点的带权路径长度为：从根结点到该结点之间的路径长度与该结点的权的乘积。
 
-### 3、树的带权路径长度
+#### 3、树的带权路径长度
 
 树的带权路径长度规定为所有叶子结点的带权路径长度之和，记为 $WPL$。
 
-## 三、如何构造哈夫曼树？
+### 三、如何构造哈夫曼树？
 
 凭直觉 ~~(反正我是这样想的)~~  肯定要把**权值大的点** 放在**树的最上层** ，因为这样才能使得**该叶节点的带权路径长度** 最小，但与此同时，这个点就不能够再有孩子了(因为他是叶节点)，不能有孩子，那么就要**增加深度** ，**深度** 又和**带权路径长度** 相关，所有这时候就要用到**霍夫曼算法**
 
-### 霍夫曼算法
+#### 霍夫曼算法
 
 1. 初始化：由给定的$N$个权值构造$N$棵只有一个根节点的二叉树，得到一个二叉树集合$F$。
 2. 选取与合并：从二叉树集合$F$中选取根节点权值 最小的两棵 二叉树分别作为左右子树构造一棵新的二叉树，这棵新二叉树的根节点的权值为其左、右子树根结点的权值和。
@@ -3832,9 +3832,9 @@ int main()
 > [[霍夫曼树 OI Wiki]](https://oi-wiki.org/ds/huffman-tree/)
 > [[AcWing 3531.哈夫曼树 WanJY 的题解]](https://www.acwing.com/solution/content/122842/)
 
-# LCA 最近公共祖先
+## LCA 最近公共祖先
 
-## 一、概念
+### 一、概念
 
 对于有根树$T$的两个结点$u、v$，最近公共祖先$LCA(T,u,v)$表示一个结点$x$，满足$x$是$u$和$v$的[祖先](https://baike.baidu.com/item/%E7%A5%96%E5%85%88/5631369)且$x$的深度尽[可能](https://baike.baidu.com/item/%E5%8F%AF%E8%83%BD/62866)大。在这里，一个节点也可以是它自己的祖先。
 
@@ -3842,19 +3842,19 @@ int main()
 
 ![](static/boxcnhliC6H9TWll5Dt7GVjSHwg.png)
 
-## 二、算法
+### 二、算法
 
-### 二叉树暴力法
+#### 二叉树暴力法
 
 > 由例题得此方法，可能会因条件特殊而不可使用
 
-#### 思路
+##### 思路
 
 先让两点的深度一样然后逐级向上遍历即可，遍历到的第一个相同的点即为**最近公共祖先**
 
 仅适用于紧挨着点的距离为 1 的情况！
 
-#### Code
+##### Code
 
 ```cpp
 //这里，令dist[i]表示 i 距离 根结点root 的距离
@@ -3871,9 +3871,9 @@ int get_lca(int x, int y)// dist[x] > dist[y]
 }
 ```
 
-#### 例题
+##### 例题
 
-##### Question:AcWing 3555.二叉树
+###### Question:AcWing 3555.二叉树
 
 Question Link:acwing.com/problem/content/3558
 
@@ -3939,17 +3939,17 @@ int main()
 }
 ```
 
-### 向上标记法
+#### 向上标记法
 
-#### 时间复杂度：$O(n)$
+##### 时间复杂度：$O(n)$
 
 现有两点$x,y$，树根为$u$，标记$x\to u$经过的所有点，然后在$y\to u$过程中遇到的第一个标记的点就是两者的 LCA
 
-### 倍增
+#### 倍增
 
-#### 时间复杂度：$O(n\log(n))$
+##### 时间复杂度：$O(n\log(n))$
 
-#### 步骤：
+##### 步骤：
 
 1. 预处理$fa[i][j]$表示从$i$开始，向上走 $2^j$步所能走到的节点，其中$0 \leq j \leq \log(n)$。预处理$depth[i]$表示深度。$O(n\log(n))$
 
@@ -4006,9 +4006,9 @@ int lca(int a, int b)
 }
 ```
 
-#### 例题
+##### 例题
 
-##### Question:AcWing 1172.祖孙询问
+###### Question:AcWing 1172.祖孙询问
 
 Question Link:acwing.com/problem/content/1174
 
@@ -4102,11 +4102,11 @@ int main()
 }
 ```
 
-### Tarjan
+#### Tarjan
 
-#### 时间复杂度：$O(n+m)$
+##### 时间复杂度：$O(n+m)$
 
-#### 思路：
+##### 思路：
 
 在深度优先遍历的时，将所有点分成三大类
 
@@ -4116,13 +4116,13 @@ int main()
 
 ![](static/Unfgbl27koOyeIxfU3Xcv21BnNf.png)
 
-# DFS 深度优先遍历
+## DFS 深度优先遍历
 
-## 一、概念
+### 一、概念
 
 一条路走到黑，黑了再回头，回头再走到黑
 
-##### Question:AcWing 3428.放苹果
+###### Question:AcWing 3428.放苹果
 
 Question Link:acwing.com/problem/content/3431
 
@@ -4173,21 +4173,21 @@ int main()
 }
 ```
 
-# 双指针
+## 双指针
 
-## 一、概念
+### 一、概念
 
-## 二、时间复杂度$O(n)$
+### 二、时间复杂度$O(n)$
 
-## 三、适用条件
+### 三、适用条件
 
 两个指针互相单调。
 
 例如，随着$r指针$向右/左移动，$l指针$必向左或右移动。
 
-## 四、实例代码
+### 四、实例代码
 
-##### Question:4405. 统计子矩阵 第十三届蓝桥杯省赛 C++B 组第六题
+###### Question:4405. 统计子矩阵 第十三届蓝桥杯省赛 C++B 组第六题
 
 Question Link:acwing.com/problem/content/4408
 
@@ -4239,13 +4239,13 @@ int main()
 }
 ```
 
-# 0-1 最短路问题
+## 0-1 最短路问题
 
-## 适用算法：双端队列 BFS（实际就是 Dijkstra 算法）
+### 适用算法：双端队列 BFS（实际就是 Dijkstra 算法）
 
-# 数论
+## 数论
 
-## 试除法判断质数
+### 试除法判断质数
 
 ```cpp
 bool isprime(int x)
@@ -4257,7 +4257,7 @@ bool isprime(int x)
 }
 ```
 
-## 试除法分解质因数
+### 试除法分解质因数
 
 ```cpp
 void divide(int x)
@@ -4273,7 +4273,7 @@ void divide(int x)
 }
 ```
 
-## 埃氏筛
+### 埃氏筛
 
 ```cpp
 int primes[N], cnt;
@@ -4292,7 +4292,7 @@ void getprimes(int n)
 }
 ```
 
-## 约数个数
+### 约数个数
 
 详情见约数之和分析过程，此处给出一个定理：
 
@@ -4333,13 +4333,13 @@ int main()
 }
 ```
 
-## 约数之和
+### 约数之和
 
 具体定理及定义请看百度百科，此处只给出结论和部分推导
 
 [约数和定理 -- 百度百科](https://baike.baidu.com/item/%E7%BA%A6%E6%95%B0%E5%92%8C%E5%AE%9A%E7%90%86/3808428?fr=aladdin)
 
-### 思路
+#### 思路
 
 对于一个大于 1 的正整数$n$可以分解质因数
 
@@ -4359,7 +4359,7 @@ $$
 
 此处用选择的思想比较容易理解
 
-### 辅助函数
+#### 辅助函数
 
 此处再给出一个函数$sum(p, k) = p^0+p^1+...+p^k$
 
@@ -4394,9 +4394,9 @@ int sum(int p, int k)
 }
 ```
 
-### 例题
+#### 例题
 
-#### Question:AcWing 97. 约数之和
+##### Question:AcWing 97. 约数之和
 
 Question Link:[https://www.acwing.com/problem/content/99/](https://www.acwing.com/problem/content/99/)
 
@@ -4480,7 +4480,7 @@ int main()
 }
 ```
 
-## 欧拉函数
+### 欧拉函数
 
 在[数论](https://baike.baidu.com/item/%E6%95%B0%E8%AE%BA/3700?fromModule=lemma_inlink)中，对[正整数](https://baike.baidu.com/item/%E6%AD%A3%E6%95%B4%E6%95%B0/8461335?fromModule=lemma_inlink) n，[欧拉](https://baike.baidu.com/item/%E6%AC%A7%E6%8B%89?fromModule=lemma_inlink)函数是小于 n 的正整数中与 n [互质](https://baike.baidu.com/item/%E4%BA%92%E8%B4%A8/577412?fromModule=lemma_inlink)的数的数目。
 
@@ -4519,15 +4519,15 @@ int main()
 }
 ```
 
-## 筛法求欧拉函数
+### 筛法求欧拉函数
 
-## 欧拉定理
+### 欧拉定理
 
 若$a$与$n$互质，则$a^{φ(n)} mod n = 1 $恒成立
 
-## 组合数
+### 组合数
 
-### 递推公式求组合数
+#### 递推公式求组合数
 
 $$
 C_a^b = C_{a-1}^b + C_{a-1}^{b-1} 
@@ -4562,7 +4562,7 @@ int main()
 }
 ```
 
-### 预处理阶乘求组合数
+#### 预处理阶乘求组合数
 
 $$
 C_a^b = \frac{a!}{b!(a-b)!}
@@ -4617,15 +4617,15 @@ int main()
 }
 ```
 
-### 卢卡斯定理求组合数
+#### 卢卡斯定理求组合数
 
 $$
 C_{a}^b  ≡ C_{a\%p}^{b\%p} C_{a/p}^{b/p} (mod p)
 $$
 
-# Hash
+## Hash
 
-## 字符串哈希
+### 字符串哈希
 
 字符串哈希顾名思义则是将字符串映射成数字。
 
@@ -4638,7 +4638,7 @@ $$
 **总结：**`P = 131 or 13331`, 在 $2^{64}-1
 $ 范围内的数字映射
 
-### 快速求出字符串子串的 Hash 值
+#### 快速求出字符串子串的 Hash 值
 
 首先定义前缀哈希数组 `h[N]:h[i]表示子串(1, i)的Hash值`
 
@@ -4665,7 +4665,7 @@ $$
 我们可以先预处理出 $P^{
 字符串个数次方}$ 的数组来降低出字符串子串的 Hash 值的时间复杂度
 
-#### Question:AcWing 138.兔子与兔子
+##### Question:AcWing 138.兔子与兔子
 
 Question Link:acwing.com/problem/content/140
 
@@ -4714,9 +4714,9 @@ int main()
 }
 ```
 
-## 欧几里得距离 Hash
+### 欧几里得距离 Hash
 
-### Question:AcWing 1402.星空之夜
+#### Question:AcWing 1402.星空之夜
 
 Question Link: [1402. 星空之夜 - AcWing 题库](http://acwing.com/problem/content/1404)
 
@@ -4801,15 +4801,15 @@ int main()
 }
 ```
 
-# 树的遍历
+## 树的遍历
 
-## 遍历树中的所有点，路径中可以包含重复的点和边
+### 遍历树中的所有点，路径中可以包含重复的点和边
 
 ![](static/boxcn5YBi5JAywzxyUegZXL4O5e.png)
 
 经分析可知，答案为所有边长度 ×2-起点到终点的距离
 
-### Question:AcWing 4706. 最短路程
+#### Question:AcWing 4706. 最短路程
 
 Question Link:acwing.com/problem/content/4709
 
@@ -4865,15 +4865,15 @@ int main()
 }
 ```
 
-# 树的直径
+## 树的直径
 
-## 一、概念
+### 一、概念
 
 树的直径是指树上最远的两个节点之间的距离，也被称为树的最长链。
 
-## 二、求法
+### 二、求法
 
-### DFS
+#### DFS
 
 Step:
 
@@ -4885,17 +4885,17 @@ Provement: 主要证明 `u` 为树的直径的端点
 
 ![](static/R8EEbqfYFoNcucx9JS2cLx1BnTc.png)
 
-### 树形 DP
+#### 树形 DP
 
-# Sort in C++
+## Sort in C++
 
-## sort
+### sort
 
 `sort` 是基于快排实现的，是一种不稳排序。
 
 理想情况下时间复杂度 $O(NlogN)$，空间复杂度$O(logN)$，极端情况下时间复杂度$O(N^2)$,空间复杂度$O(N)$
 
-## stable_sort
+### stable_sort
 
 `stable_sort` 是基于归并排序的，是一种稳定排序。
 
@@ -4905,11 +4905,11 @@ Provement: 主要证明 `u` 为树的直径的端点
 
 `stable_sort` 对 `cmp函数` 的调用次数较少，例题如下
 
-# 快速排序
+## 快速排序
 
 排序等知识并不常考，此处仅记录思路与模板
 
-## 思路
+### 思路
 
 运用分治及递归的思想，每次选取一个区间，对这个区间中选取一个值，然后通过**一系列操作**使得该区间分成两个区间一个区间大于所选取的值，另一个区间小于所选取的值，然后递归处理两个区间，当所处理区间不合法时结束递归。
 
@@ -4919,7 +4919,7 @@ Provement: 主要证明 `u` 为树的直径的端点
 
 每次先令$i++$ $j --$ 然后进行 `while` 判断，`while` 结束后，若指针合法则交换两个指针所指内容
 
-## 模板
+### 模板
 
 ```cpp
 void quick_sort(int l, int r)
@@ -4937,27 +4937,27 @@ void quick_sort(int l, int r)
 }
 ```
 
-# 归并排序
+## 归并排序
 
 排序等知识并不常考，此处仅记录思路与模板
 
-## 思想
+### 思想
 
 运用分治及递归的思想，每次先将区间一分为二进行递归，然后进行归并操作。
 
 首先有区间$[l, mid],[mid+1,r]$,设$i = l, j= (l + r) / 2 + 1$，由于递归，经分析可知这两区间均为单调，故进行归并操作，同时比较归并至一个**临时数组**同时移动两个指针知道某个指针结束，然后将未被归并进的数按原序存入**临时数组**，然后将**临时数组**覆盖在原数组的$[l,r]$
 
-## 模板
+### 模板
 
 ```cpp
 
 ```
 
-# 容斥原理
+## 容斥原理
 
-# 简单博弈论
+## 简单博弈论
 
-## NIM 游戏
+### NIM 游戏
 
 ```
     给定N堆物品，第i堆物品有Ai个。两名玩家轮流行动，每次可以任选一堆，取走任意多个物品，可把一堆取光，但不能不取。取走最后一件物品者获胜。两人都采取最优策略，问先手是否必胜。
@@ -4971,7 +4971,7 @@ void quick_sort(int l, int r)
     定理： NIM博弈先手必胜，当且仅当 A1 ^ A2 ^ ... ^ An != 0
 ```
 
-## 公平组合游戏 ICG
+### 公平组合游戏 ICG
 
 ```
     若一个游戏满足：
@@ -4987,7 +4987,7 @@ void quick_sort(int l, int r)
     NIM博弈属于公平组合游戏，但城建的棋类游戏，比如围棋，就不是公平组合游戏。因为围棋交战双方分别只能落黑子和白子，胜负判定也比较复杂，不满足条件2和条件3。
 ```
 
-## 有向图游戏
+### 有向图游戏
 
 ```
     给定一个有向无环图，图中有一个唯一的起点，在起点上放有一枚棋子。两名玩家交替地把这枚棋子沿有向边进行移动，每次可以移动一步，无法移动者判负。该游戏被称为有向图游戏。
@@ -4995,7 +4995,7 @@ void quick_sort(int l, int r)
     任何一个公平组合游戏都可以转化为有向图游戏。具体方法是，把每个局面看成图中的一个节点，并且从每个局面向沿着合法行动能够到达的下一个局面连有向边。
 ```
 
-## Mex 运算
+### Mex 运算
 
 ```
     设S表示一个非负整数集合。定义mex(S)为求出不属于集合S的最小非负整数的运算，即：
@@ -5003,7 +5003,7 @@ void quick_sort(int l, int r)
             mex(S) = min{x}, x属于自然数，且x不属于S
 ```
 
-## SG 函数
+### SG 函数
 
 ```
     在有向图游戏中，对于每个节点x，设从x出发共有k条有向边，分别到达节点y1, y2, ..., yk，定义SG(x)为x的后继节点y1, y2, ..., yk 的SG函数值构成的集合再执行mex(S)运算的结果，即：
@@ -5013,7 +5013,7 @@ void quick_sort(int l, int r)
     特别地，整个有向图游戏G的SG函数值被定义为有向图游戏起点s的SG函数值，即SG(G) = SG(s)。
 ```
 
-## 有向图游戏的和
+### 有向图游戏的和
 
 ```
     设G1, G2, ..., Gm 是m个有向图游戏。定义有向图游戏G，它的行动规则是任选某个有向图游戏Gi，并在Gi上行动一步。G被称为有向图游戏G1, G2, ..., Gm的和。
@@ -5023,7 +5023,7 @@ void quick_sort(int l, int r)
             SG(G) = SG(G1) ^ SG(G2) ^ ... ^ SG(Gm)
 ```
 
-## 定理
+### 定理
 
 ```
     有向图游戏的某个局面必胜，当且仅当该局面对应节点的SG函数值大于0。
@@ -5031,11 +5031,11 @@ void quick_sort(int l, int r)
     有向图游戏的某个局面必败，当且仅当该局面对应节点的SG函数值等于0。
 ```
 
-# MathKnowledge
+## MathKnowledge
 
-## **排序不等式**（Rearrangement Inequality）
+### **排序不等式**（Rearrangement Inequality）
 
-### 内容
+#### 内容
 
 设有两数列$a_1,a_2,\cdots,a_n$和$b_1,b_2,\cdots,b_n$，满足$a_1 \leq a_2 \leq \cdots \leq a_n$，$b_1 \leq b_2 \leq \cdots \leq b_n$，$c_1,c_2,\cdots,c_n$是$b_1,b_2,\cdots,b_n$的乱序排列，则有
 
@@ -5045,7 +5045,7 @@ $$
 
 当且仅当$a_i=a_j$或$b_i=b_j\ (1\leq i, j \leq n)$时等号成立
 
-## 分拆数
+### 分拆数
 
 分拆：将自然数 $n$ 写成递降正整数和的表示。
 
@@ -5057,7 +5057,7 @@ $$
 
 分拆数：$p_n$。自然数 $n$ 的分拆方法数。
 
-## k 部分拆数
+### k 部分拆数
 
 将 $n$ 分成恰有 $k$ 个部分的分拆，称为 $k$ 部分拆数，记作 $p(n,k)$。
 
@@ -5079,9 +5079,9 @@ $$
 p(n,k)=p(n-1,k-1)+p(n-k,k)
 $$
 
-# Some Typical Problem
+## Some Typical Problem
 
-## 合法括号序列
+### 合法括号序列
 
 **合法括号序列**可以被等价地描述为
 
@@ -5115,37 +5115,37 @@ int main(){
 }
 ```
 
-## 区间最值问题
+### 区间最值问题
 
 区间最值问题在一个连续的区间上的最大\小值问题，有多种实现方法
 
-### By Multiset
+#### By Multiset
 
-# Stern-Brocot Tree
+## Stern-Brocot Tree
 
-## 定义
+### 定义
 
 Stern-Brocot Tree 是一种人为构造生成 **所有正有理数的树形结构**，树上的每个节点与全体有理数（最简形式） **构成双射**。
 
 More detail in [Stern-Brocot Tree - Achtoria - 博客园](https://www.cnblogs.com/Go7338395/p/15340637.html)
 
-## Queston AcWing 1360. 有序分数
+### Queston AcWing 1360. 有序分数
 
 Question Link:[1360. 有序分数 - AcWing 题库](https://www.acwing.com/problem/content/1362/)
 
-## 
+### 
 
-# 离散化
+## 离散化
 
-## 定义
+### 定义
 
 离散化，把无限空间中有限的个体映射到有限的空间中去，以此提高算法的时空效率。
 
 通俗的说，离散化是在不改变数据相对大小的条件下，对数据进行相应的缩小。
 
-## 实现
+### 实现
 
-### 二分方法实现
+#### 二分方法实现
 
 将原数据打包进数组进行排序，用二分来查找某原数据的下标，即为该原数据的离散值（相对大小位置）
 
@@ -5169,7 +5169,7 @@ int turn(int loc)
 }
 ```
 
-### std::map<originalValue, discretizationValue> 实现
+#### std::map<originalValue, discretizationValue> 实现
 
 将原数据打包进数组进行排序，用 `map` 来存储，其中 `key` 为原值，`val` 为离散化后的值
 
@@ -5182,7 +5182,7 @@ sort(...);
 for (int x : location) h[x] = idx ++;
 ```
 
-### 全新方法 from y 总
+#### 全新方法 from y 总
 
 **注意：此方法要求原数据无重复！**
 
@@ -5206,4 +5206,4 @@ void work(int a[])
 
 解读 `sort()`：`sort()` 之后有$a_{p_1} < a_{p_2} < \cdots <  a_{p_n} $
 
-# 逆序对
+## 逆序对
