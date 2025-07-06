@@ -76,55 +76,6 @@ def sync_markdown_file(document_token, document_info):
     subprocess.run(["git", "push"], check=True)
     print(f"✅ Synced and pushed: {filename}")
 
-# def sync_static_file():
-    # 指定目录路径
-    # directory = "static"
-
-    # 遍历目录
-    # for entry in os.listdir(directory):
-    #     print(entry)
-    # src_dir = "feishu2md/static"
-    # dst_dir = "static"
-    # for root, _, files in os.walk(src_dir):
-    #     rel_path = os.path.relpath(root, src_dir)
-    #     target_root = os.path.join(dst_dir, rel_path) if rel_path != "." else dst_dir
-
-    #     if not os.path.exists(target_root):
-    #         os.makedirs(target_root)
-
-    #     # 1. 复制覆盖所有文件（递归）
-    #     for file in files:
-    #         src_file = os.path.join(root, file)
-    #         dst_file = os.path.join(target_root, file)
-
-    #         ## 先判断文件是否有变化（存在且内容相同则跳过复制）
-    #         if os.path.exists(dst_file):
-    #             if filecmp.cmp(src_file, dst_file, shallow=False):
-    #                 continue  ## 文件相同，无需覆盖
-
-    #         shutil.copy2(src_file, dst_file)
-    #         print(f"🔄 覆盖文件: {dst_file}")
-
-
-    #     # 2. 判断是否有改动
-    #     ## 先 git add static
-    #     subprocess.run(["git", "add", "static"], check=True)
-
-    #     ## 用 git diff --cached 判断是否有暂存改动
-    #     result = subprocess.run(["git", "diff", "--cached", "--quiet"])
-    #     if result.returncode == 0:
-    #         print("✅ static目录无改动，无需提交。")
-    #         return
-
-    #     ## 3. 配置 git 用户信息
-    #     subprocess.run(["git", "config", "user.name", "github-actions[bot]"], check=True)
-    #     subprocess.run(["git", "config", "user.email", "github-actions[bot]@users.noreply.github.com"], check=True)
-
-    #     ## 4. 提交并推送
-    #     subprocess.run(["git", "commit", "-m", "🤖 自动同步 static 目录文件"], check=True)
-    #     subprocess.run(["git", "push"], check=True)
-    #     print("✅ static 目录已提交并推送。")
-
 def sync_static_file():
     # 1. 添加 static 目录变更到暂存区
     subprocess.run(["git", "add", "static"], check=True)
