@@ -24,5 +24,30 @@
             "SQL",
             "MySQL"
         ]
-    } 
+    },
+      "RIDMdBYhZolBFjxDxn1cYSpPnBg": {
+        "title": "Kali Learning Note",
+        "date": "2020-08-22 11:57",
+        "categories": [
+            "Note",
+            "Kali"
+        ],
+        "tags": [
+            "Note",
+            "Kali",
+            "Cybersecurity"
+        ]
+    },
+    "doxcnFuSdf8O45b1rQaBBIrjnyd": {
+        "title": "BashShell Learning Note",
+        "date": "2022-07-25 00:00",
+        "categories": [
+            "Note",
+            "BashShell"
+        ],
+        "tags": [
+            "Note",
+            "BashShell"
+        ]
+    }
 }
