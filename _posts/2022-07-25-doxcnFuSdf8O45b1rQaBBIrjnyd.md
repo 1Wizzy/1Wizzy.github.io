@@ -444,7 +444,7 @@ echo $DATETIME
 #数据库地址
 HOST=localhost
 USER=root
-PASSWD=Yang0212
+PASSWD=????????
 DATABASE=?????
 #创建备份目录
 [ ! -d "$BACKUPDIRECTORY/$DATETIME" ] && mkdir -p "$BACKUPDIRECTORY/$DATETIME"
