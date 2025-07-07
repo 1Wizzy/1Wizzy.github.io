@@ -407,9 +407,7 @@ p {
 
   - 状态伪类：元素处于某种状态
 
-  ```html
-  ```
-
+```html
 <a href="http://example.com">
   example.com
 </a>
@@ -440,11 +438,11 @@ a:active {
   outline: 2px solid orange;
 }
 </style>
-
 ```
-	
-		- 结构型伪类：通过 DOM 树
-	```html
+
+- 结构型伪类：通过 DOM 树
+
+```html
 <ol>
   <li>阿凡达</li>
   <li>泰坦尼克号</li>
@@ -470,11 +468,9 @@ li:last-child {
 </style>
 ```
 
-```
-	#### 组合(Combinators)选择器
-<table>
-```
+#### 组合(Combinators)选择器
 
+<table>
 <tr>
 <td>名称<br/></td><td>语法<br/></td><td>说明<br/></td><td>示例<br/></td></tr>
 <tr>
@@ -488,7 +484,8 @@ li:last-child {
 <tr>
 <td>相邻选择器<br/></td><td>A + B<br/></td><td>选中 B，如果它紧跟在 A 后面<br/></td><td>h2 + p<br/></td></tr>
 </table>
-	```html
+
+```html
 <label>
   用户名：
   <input class="error" value="aa">
@@ -506,9 +503,9 @@ li:last-child {
     border-color: red;
   }
 </style>
-
 ```
-		```html
+
+```html
 <article>
   <h1>拉森火山国家公园</h1>
   <p>拉森火山国家公园是位于...</p>
@@ -534,28 +531,23 @@ li:last-child {
 </style>
 ```
 
-```
-	#### 选择器组
-```css
-```
+#### 选择器组
 
+```css
 body, h1, h2, h3, h4, h5, h6, ul, ol, li {
-margin: 0;
-padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 [type="checkbox"], [type="radio"] {
-box-sizing: border-box;
-padding: 0;
+    box-sizing: border-box;
+    padding: 0;
 }
-
 ```
 
+### 颜色
 
-
-## 颜色
-
-### 表示方式
+#### 表示方式
 
 - RGB
 
@@ -573,15 +565,13 @@ Example：hsl(18, 66%, 55%)
 
 ![](static/RwNJbNXAto1REnxlKaccNlQMnjT.png)
 
-### alpha 透明度
+#### alpha 透明度
 
-Example: 
+Example:
 
-新时代浏览器可能不需要`a`
+新时代浏览器可能不需要 `a`
 
-
-
-## 字体族 font-family
+### 字体族 font-family
 
 例如通常为
 
@@ -627,7 +617,7 @@ p {
 > 建议：字体列表最后写上通用字体族
 > 英文字体放在中文字体前面
 
-### 使用 Web-Font
+#### 使用 Web-Font
 
 ```html
 <h1>Web fonts are awesome!</h1>
@@ -673,7 +663,7 @@ p {
 
 > 中文字体较大，建议先裁剪需要的字
 
-### 字体一些属性
+#### 字体一些属性
 
 - Font-size
 
@@ -687,7 +677,7 @@ p {
 - line-height
   -----------
 
-## 选择器的特异度(Specificity)
+### 选择器的特异度(Specificity)
 
 ![](static/NgtHbIes1oPqQFxzWJgcqHvmn2f.png)
 
@@ -719,7 +709,7 @@ Example：
 </style>
 ```
 
-## CSS 的继承
+### CSS 的继承
 
 某些属性会自动继承其父元素的**计算值**，除非显式指定一个值
 
@@ -753,7 +743,7 @@ html {
 }
 ```
 
-## CSS 的初始值
+### CSS 的初始值
 
 - CSS 中，每个属性都有一个初始值
 
@@ -763,20 +753,20 @@ html {
 
   - background-color: initial
 
-## CSS 求值过程
+### CSS 求值过程
 
 ![](static/M9YhbT5FUoBxbrxo5Cvcd5jXnOg.png)
 ![](static/KwhNbv81po1qw7xOf7Ccrmrdn3e.png)
 ![](static/TH4nb7InNo5kvrxwlY7cFJD6nB4.png)
 
-## 布局
+### 布局
 
 ![](static/Q69rbCeQmorsRRxIrw4cbP58ncd.png)
 
 - 确定内容的大小和位置的算法
 - 依据元素、容器、兄弟节点和内容等信息来计算
 
-### 布局相关技术
+#### 布局相关技术
 
 ![](static/LNYxbnoKBoKk5Hx4AvtcufQVn6d.png)
 
@@ -814,9 +804,7 @@ html {
   - 百分数相对于容器宽度
   - 使用 margin: auto 水平居中
 
-  ```html
-  ```
-
+```html
 <div></div>
 
 <style>
@@ -831,21 +819,17 @@ html {
   background: #333;
 }
 </style>
-
 ```
-		- margin collapse：当两个相邻元素的之间的边距只取 max（例，A 的下边距为100， B 的上边距为 110，AB上下边距为110）
-	
+
+- margin collapse：当两个相邻元素的之间的边距只取 max（例，A 的下边距为 100， B 的上边距为 110，AB 上下边距为 110）
 - box-sizing: border-box
 
 ![](static/Vn64bdy5dofna3xZlHycWyFMnhg.png)
 
-
 - overflow 文本超出容器处理方式
-	- Visible：可见
-	- Hidden：隐藏
-	- Scroll：可滚动
-
-
+  - Visible：可见
+  - Hidden：隐藏
+  - Scroll：可滚动
 
 #### 块级 Versus 行级
 
@@ -879,62 +863,51 @@ HTML 中的概念
 > inline-block 本身是行级，可以放在行盒中;可以设置宽高;作为一个整体不会被拆散成多行
 > none 排版时完全被忽略
 
-
-
 #### 常规流 Normal Flow
 
 - 根元素、浮动和绝对定位的元素会脱离常规流
-
 - 其它元素都在常规流之内 (in-flow)
-
 - 常规流中的盒子，在某种排版上下文中参与布局
 
 ##### 行级排版上下文
 
 - Inline Formatting Context (IFC)
-
 - **只包含行级盒子**的容器会创建一个 IFC
-
 - IFC 内的排版规则
-	- 盒子在一行内水平摆放
-	- 一行放不下时，换行显示
-	- text-align 决定一行内盒子的水平对齐
-	- vertical-align 决定一个盒子在行内的垂直对齐
-	- 避开浮动(float)元素*
 
+  - 盒子在一行内水平摆放
+  - 一行放不下时，换行显示
+  - text-align 决定一行内盒子的水平对齐
+  - vertical-align 决定一个盒子在行内的垂直对齐
+  - 避开浮动(float)元素*
 
 ##### 块级排版上下文
 
 - Block Formatting Context (BFC)
+- 某些容器会创建一个 BFC
 
-- 某些容器会创建一个BFC
-	- 根元素
-	- 浮动、绝对定位、inline-block
-	- Flex子项和Grid子项
-	- overflow 值不是 visible 的块盒
-	- display: flow-root;
-
+  - 根元素
+  - 浮动、绝对定位、inline-block
+  - Flex 子项和 Grid 子项
+  - overflow 值不是 visible 的块盒
+  - display: flow-root;
 - BFC 内的排版规则
-	- 盒子从上到下摆放
-	- 垂直 margin 合并
-	- BFC 内盒子的 margin 不会与外面的含并
-	- BFC不会和浮动元素重叠
 
-
-
+  - 盒子从上到下摆放
+  - 垂直 margin 合并
+  - BFC 内盒子的 margin 不会与外面的含并
+  - BFC 不会和浮动元素重叠
 
 ##### Flex Box
 
 - 一种新的排版上下文
-
 - 它可以控制子级盒子的:
-	- 摆放的流向(↑↓←→)
-	- 摆放顺序
-	- 盒子宽度和高度
-	- 水平和垂直方向的对齐
-	- 是否允许折行
 
-
+  - 摆放的流向(↑↓←→)
+  - 摆放顺序
+  - 盒子宽度和高度
+  - 水平和垂直方向的对齐
+  - 是否允许折行
 - flex-direction
 
 ![](static/M2xxbqQ0HoR3jOxP9uJccLA6nHJ.png)
@@ -960,67 +933,57 @@ HTML 中的概念
 ![](static/X4QAbmay7oC105xWQ1Ncw1P5nLh.png)
 
 - Flexibility
-	- 可以设置子项的弹性: 当容器有剩余空间时，会伸展;容器空间不够时，会收缩。
-	- flex-grow 有剩余空间时的伸展能力
-	- flex-shrink 容器空间不足时收缩的能力
-	- flex-basis 没有伸展或收缩时的基础长度
 
+  - 可以设置子项的弹性: 当容器有剩余空间时，会伸展;容器空间不够时，会收缩。
+  - flex-grow 有剩余空间时的伸展能力
+  - flex-shrink 容器空间不足时收缩的能力
+  - flex-basis 没有伸展或收缩时的基础长度
 - flex-grow
-
-
 - flex-shrink
-
-
 - flex：缩写子属性
 
 ![](static/NRvibycmGokhnfxNehPcsQggnTf.png)
-
-
 
 ##### Grid 布局
 
 ![](static/WUptbGfb4oGuCkx6nBFcY6sJnWg.png)
 
 - display:grid
-	- display: grid 使元素生成一个块级的 Grid 容器
-	- 使用 grid-template 相关属性将容器划分为网格
-	- 设置每一个子项占哪些行/列
-![](static/H1iQbFgFGoo6nJxz89ScjlnpnXe.png)
 
+  - display: grid 使元素生成一个块级的 Grid 容器
+  - 使用 grid-template 相关属性将容器划分为网格
+  - 设置每一个子项占哪些行/列
+    ![](static/H1iQbFgFGoo6nJxz89ScjlnpnXe.png)
 - grid line 网格线
-	![](static/PUjjbCV6corZvlxi1Kjc3TZLnEe.png)
+  ![](static/PUjjbCV6corZvlxi1Kjc3TZLnEe.png)
 - grid area 网格区域
-![](static/IbEAbIhCWokIZixW6xTcuhu3nrb.png)
-
-
+  ![](static/IbEAbIhCWokIZixW6xTcuhu3nrb.png)
 
 #### float
-
 
 #### 绝对定位 position
 
 - static：默认值，非定位元素
-
 - relative：相对自身原本位置偏移，不脱离文档流
-	- 在常规流里面布局
-	- 相对于自己本应该在的位置进行偏移
-	- 使用 top、left、bottom、right 设置偏移长度
-	- 流内其它元素当它没有偏移一样布局
-	> 好像紫色方块还存在一样
-	
+
+  - 在常规流里面布局
+  - 相对于自己本应该在的位置进行偏移
+  - 使用 top、left、bottom、right 设置偏移长度
+  - 流内其它元素当它没有偏移一样布局
+
+  > 好像紫色方块还存在一样
+  >
+
 ![](static/JbcPbVr1Oo4BGExxUJfcWRqYnDf.png)
 
 - absolute：绝对定位，相对非 static 祖先元素定位
-	- 脱离常规流
-	- 相对于**最近的非 static 祖先**定位
-	- 不会对流内元素布局造成影响
+  - 脱离常规流
+  - 相对于**最近的非 static 祖先**定位
+  - 不会对流内元素布局造成影响
 
 ![](static/RNCUbwXfaozBEzxvesDcbHXfnJd.png)
 
 - fixed：相对于视口绝对定位
-
-
-
 
 ## Lesson 4 如何写好 JavaScript
 
@@ -1033,8 +996,9 @@ HTML 中的概念
 **举例说明**：写一段 JS，控制一个网页，让它支持浅色和深色两种浏览模式
 
 - Version One
-	- Code
-	```html
+  - Code
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1063,33 +1027,30 @@ HTML 中的概念
 </html>
 ```
 
-```
 ```css
-```
-
 body, html {
-width: 100%;
-height: 100%;
-padding: 0;
-margin: 0;
-overflow: hidden;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
 }
 body {
-padding: 10px;
-box-sizing: border-box;
+  padding: 10px;
+  box-sizing: border-box;
 }
 div.pic img {
-width: 100%;
+  width: 100%;
 }
 #modeBtn {
-font-size: 2rem;
-float: right;
-border: none;
-background: transparent;
+  font-size: 2rem;
+  float: right;
+  border: none;
+  background: transparent;
 }
-
 ```
-	```javascript
+
+```javascript
 const btn = document.getElementById('modeBtn');
 btn.addEventListener('click', (e) => {
   const body = document.body;
@@ -1105,20 +1066,13 @@ btn.addEventListener('click', (e) => {
 });
 ```
 
-```
 - 通过 Javascript 改变样式，不再是各司其职
-- 
-	
-```
-
 - Version Two
+
   - Code
 
-  ```html
-  ```
-
+```html
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -1145,7 +1099,8 @@ btn.addEventListener('click', (e) => {
 </body>
 </html>
 ```
-	```css
+
+```css
 body, html {
   width: 100%;
   height: 100%;
@@ -1172,20 +1127,20 @@ div.pic img {
 }
 
 body.night {
-background-color: black;
-color: white;
-transition: all 1s;
+  background-color: black;
+  color: white;
+  transition: all 1s;
 }
 
 #modeBtn::after {
-content: '🌞';
+  content: '🌞';
 }
 body.night #modeBtn::after {
-content: '🌜';
+  content: '🌜';
 }
-
 ```
-	```javascript
+
+```javascript
 const btn = document.getElementById('modeBtn');
 btn.addEventListener('click', (e) => {
   const body = document.body;
@@ -1197,20 +1152,13 @@ btn.addEventListener('click', (e) => {
 });
 ```
 
-```
 - 用 Javascript 控制元素类， 用类的样式来控制元素
-- 
-	
-```
-
 - Version Three
+
   - Code
 
-  ```html
-  ```
-
+```html
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -1240,7 +1188,8 @@ btn.addEventListener('click', (e) => {
 </body>
 </html>
 ```
-	```css
+
+```css
 body, html {
   width: 100%;
   height: 100%;
@@ -1251,58 +1200,50 @@ body, html {
 }
 
 body {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .content {
-padding: 10px;
-transition: background-color 1s, color 1s;
+  padding: 10px;
+  transition: background-color 1s, color 1s;
 }
 
 div.pic img {
-width: 100%;
+  width: 100%;
 }
 
 #modeCheckBox {
-display: none;
+  display: none;
 }
 
 #modeCheckBox:checked + .content {
-background-color: black;
-color: white;
-transition: all 1s;
+  background-color: black;
+  color: white;
+  transition: all 1s;
 }
 
 #modeBtn {
-font-size: 2rem;
-float: right;
+  font-size: 2rem;
+  float: right;
 }
 
 #modeBtn::after {
-content: '🌞';
+  content: '🌞';
 }
 
 #modeCheckBox:checked + .content #modeBtn::after {
-content: '🌜';
+  content: '🌜';
 }
-
 ```
-	- 无需 Javascript， 更加的各司其职，但不强求
-	- 
-	
 
+- 无需 Javascript， 更加的各司其职，但不强求
 
 由上面的例子得出的**结论**：
 
 - HTML/CSS/JS 各司其职
-
 - 应当避免不必要的由 JS 直接操作样式
-
 - 可以用 class 来表示状态
-
 - 纯展示类交互寻求零 JS 方案
-
-
 
 ### 组件封装
 
@@ -1312,27 +1253,28 @@ content: '🌜';
 
 **举例说明：**用原生 JS 写一个电商网站的轮播图
 
-- 结构设计：HTML，轮播图是一个典型的列表结构，我们可以使用无序列表`<ul>` 元素来实现
-
+- 结构设计：HTML，轮播图是一个典型的列表结构，我们可以使用无序列表 `<ul>` 元素来实现
 - 展示效果：CSS
-	- 使用 CSS 绝对定位将图片重叠在同一个位置
-	- 轮播图切换的状态使用修饰符(modifier)
-	- 轮播图的切换动画使用 CSS transition
 
+  - 使用 CSS 绝对定位将图片重叠在同一个位置
+  - 轮播图切换的状态使用修饰符(modifier)
+  - 轮播图的切换动画使用 CSS transition
 - 行为设计：API
-	- API设计应保证原子操作，职责单一，满足灵活性。
-	- getSelectedItem()
-	- getSelectedItemIndex()
-	- slideTo()
-	- slideNext()
-	- slidePrevious()
 
+  - API 设计应保证原子操作，职责单一，满足灵活性。
+  - getSelectedItem()
+  - getSelectedItemIndex()
+  - slideTo()
+  - slideNext()
+  - slidePrevious()
 - 行为设计：控制流
-	- 使用自定义事件来解耦
 
+  - 使用自定义事件来解耦
 - 代码实现：
-	- Version One： API 的简单实现
-		```html
+
+  - Version One： API 的简单实现
+
+```html
 <div id="my-slider" class="slider-list">
   <ul>
     <li class="slider-list__item--selected">
@@ -1351,37 +1293,34 @@ content: '🌜';
 </div>
 ```
 
-```
 ```css
-```
-
 #my-slider{
-position: relative;
-width: 790px;
+  position: relative;
+  width: 790px;
 }
 
 .slider-list ul{
-list-style-type:none;
-position: relative;
-padding: 0;
-margin: 0;
+  list-style-type:none;
+  position: relative;
+  padding: 0;
+  margin: 0;
 }
 
 .slider-list__item,
 .slider-list__item--selected{
-position: absolute;
-transition: opacity 1s;
-opacity: 0;
-text-align: center;
+  position: absolute;
+  transition: opacity 1s;
+  opacity: 0;
+  text-align: center;
 }
 
 .slider-list__item--selected{
-transition: opacity 1s;
-opacity: 1;
+  transition: opacity 1s;
+  opacity: 1;
 }
-
 ```
-	```javascript
+
+```javascript
 class Slider{
   constructor(id){
     this.container = document.getElementById(id);
@@ -1423,11 +1362,9 @@ const slider = new Slider('my-slider');
 slider.slideTo(3);
 ```
 
-```
 - Version Two：控制流
-	```html
-```
 
+```html
 <div id="my-slider" class="slider-list">
   <ul>
     <li class="slider-list__item--selected">
@@ -1453,7 +1390,8 @@ slider.slideTo(3);
   </div>
 </div>
 ```
-	```css
+
+```css
 #my-slider{
   position: relative;
   width: 790px;
@@ -1461,99 +1399,100 @@ slider.slideTo(3);
 }
 
 .slider-list ul{
-list-style-type:none;
-position: relative;
-width: 100%;
-height: 100%;
-padding: 0;
-margin: 0;
+  list-style-type:none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .slider-list__item,
 .slider-list__item--selected{
-position: absolute;
-transition: opacity 1s;
-opacity: 0;
-text-align: center;
+  position: absolute;
+  transition: opacity 1s;
+  opacity: 0;
+  text-align: center;
 }
 
 .slider-list__item--selected{
-transition: opacity 1s;
-opacity: 1;
+  transition: opacity 1s;
+  opacity: 1;
 }
 
 .slide-list__control{
-position: relative;
-display: table;
-background-color: rgba(255, 255, 255, 0.5);
-padding: 5px;
-border-radius: 12px;
-bottom: 30px;
-margin: auto;
+  position: relative;
+  display: table;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 5px;
+  border-radius: 12px;
+  bottom: 30px;
+  margin: auto;
 }
 
 .slide-list__next,
 .slide-list__previous{
-display: inline-block;
-position: absolute;
-top: 50%;
-margin-top: -25px;
-width: 30px;
-height:50px;
-text-align: center;
-font-size: 24px;
-line-height: 50px;
-overflow: hidden;
-border: none;
-background: transparent;
-color: white;
-background: rgba(0,0,0,0.2);
-cursor: pointer;
-opacity: 0;
-transition: opacity .5s;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  width: 30px;
+  height:50px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 50px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  color: white;
+  background: rgba(0,0,0,0.2);
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity .5s;
 }
 
 .slide-list__previous {
-left: 0;
+  left: 0;
 }
 
 .slide-list__next {
-right: 0;
+  right: 0;
 }
 
 #my-slider:hover .slide-list__previous {
-opacity: 1;
+  opacity: 1;
 }
 
+
 #my-slider:hover .slide-list__next {
-opacity: 1;
+  opacity: 1;
 }
 
 .slide-list__previous:after {
-content: '<';
+  content: '<';
 }
 
 .slide-list__next:after {
-content: '>';
+  content: '>';
 }
 
 .slide-list__control-buttons,
 .slide-list__control-buttons--selected{
-display: inline-block;
-width: 15px;
-height: 15px;
-border-radius: 50%;
-margin: 0 5px;
-background-color: white;
-cursor: pointer;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: white;
+  cursor: pointer;
 }
 
 .slide-list__control-buttons--selected {
-background-color: red;
+  background-color: red;
 }
-
 ```
-	```javascript
+
+```javascript
 class Slider{
   constructor(id, cycle = 3000){
     this.container = document.getElementById(id);
@@ -3052,3 +2991,4 @@ Babel 提供了一套插件系统，允许开发者根据需要添加不同的�
 
 > 笔记记于 2023 年暑假 ByteDance 青训营——前端
 > 部分发布在稀土掘金
+> CHANGE
