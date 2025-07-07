@@ -1,28 +1,39 @@
 {
-    "doxcnDEz0kbuLr5n0SWsUkAi7fL": {
-        "title": "Algorithm Note",
-        "date": "2022-07-01 00:00",
+    "RIDMdBYhZolBFjxDxn1cYSpPnBg": {
+        "title": "Kali Learning Note",
+        "date": "2020-08-22 11:57",
         "categories": [
             "Note",
-            "Algorithm"
+            "Kali"
         ],
         "tags": [
             "Note",
-            "Algorithm",
-            "CPP"
+            "Kali",
+            "Cybersecurity"
         ]
     },
-     "doxcn1X7wtTEepmBg9BRK1uCetc": {
-        "title": "SQL Learning Note",
-        "date": "2022-08-25 00:00",
+    "doxcnsSjgIGsrsJn21NEJM6W2Ig": {
+        "title": "DataStructure Learning Note",
+        "date": "2022-08-09 00:00",
         "categories": [
             "Note",
-            "SQL"
+            "DataStructure"
         ],
         "tags": [
             "Note",
-            "SQL",
-            "MySQL"
+            "DataStructure"
         ]
-    } 
+    },
+    "doxcnFuSdf8O45b1rQaBBIrjnyd": {
+        "title": "BashShell Learning Note",
+        "date": "2022-07-25 00:00",
+        "categories": [
+            "Note",
+            "BashShell"
+        ],
+        "tags": [
+            "Note",
+            "BashShell"
+        ]
+    }
 }
