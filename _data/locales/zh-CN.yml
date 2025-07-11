@@ -30,7 +30,7 @@ panel:
 copyright:
   # Shown at the bottom of the post
   license:
-    template: 本文由作者按照 :LICENSE_NAME 进行授权 \n 转载请注明出处，且不得用于商业用途，需以相同方式共享。
+    template: 本文由作者按照 :LICENSE_NAME 进行授权，转载请注明出处，且不得用于商业用途，需以相同方式共享。
     name: CC BY-NC-SA 4.0
     link: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
