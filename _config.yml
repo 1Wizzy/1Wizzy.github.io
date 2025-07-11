@@ -78,10 +78,11 @@ pageviews:
   provider: # now only supports 'goatcounter'
 
 # Page footer settings
-footer:
-  license:
-    enabled: true
-    content: "本文采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议发布，转载请注明出处。"
+# use _data/locales/zh-CN.yml to change post license
+# footer:
+#   license:
+#     enabled: true
+#     content: "本文采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议发布，转载请注明出处。"
 
 
 # Prefer color scheme setting.
