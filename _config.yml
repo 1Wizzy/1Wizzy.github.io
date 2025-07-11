@@ -77,6 +77,13 @@ analytics:
 pageviews:
   provider: # now only supports 'goatcounter'
 
+# Page footer settings
+footer:
+  license:
+    enabled: true
+    content: "本文采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议发布，转载请注明出处。"
+
+
 # Prefer color scheme setting.
 #
 # Note: Keep empty will follow the system prefer color by default,
