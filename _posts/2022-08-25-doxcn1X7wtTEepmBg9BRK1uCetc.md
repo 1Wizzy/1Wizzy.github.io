@@ -1,7 +1,7 @@
 ---
 title: "SQL Learning Note"
 date: 2022-08-25 00:00
-categories: ['Note', 'SQL']
+categories: ['Note']
 tags: ['Note', 'SQL', 'MySQL']
 ---
 
