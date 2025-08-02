@@ -1,7 +1,7 @@
 ---
 title: "2023暑假ByteDance青训营笔记"
 date: 2023-07-26 00:00
-categories: ['Note', 'FrontEnd']
+categories: ['Note']
 tags: ['Note', 'FrontEnd']
 ---
 
