@@ -1,7 +1,7 @@
 ---
 title: "BashShell Learning Note"
 date: 2022-07-25 00:00
-categories: ['Note', 'BashShell']
+categories: ['Note']
 tags: ['Note', 'BashShell']
 ---
 
