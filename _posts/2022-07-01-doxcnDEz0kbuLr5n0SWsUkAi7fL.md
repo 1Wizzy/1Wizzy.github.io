@@ -1,7 +1,7 @@
 ---
 title: "Algorithm Note"
 date: 2022-07-01 00:00
-categories: ['Note', 'Algorithm']
+categories: ['Note']
 tags: ['Note', 'Algorithm', 'CPP']
 ---
 
