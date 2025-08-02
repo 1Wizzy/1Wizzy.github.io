@@ -1,7 +1,7 @@
 ---
 title: "Kali Learning Note"
 date: 2020-08-22 11:57
-categories: ['Note', 'Kali']
+categories: ['Note']
 tags: ['Note', 'Kali', 'Cybersecurity']
 ---
 
