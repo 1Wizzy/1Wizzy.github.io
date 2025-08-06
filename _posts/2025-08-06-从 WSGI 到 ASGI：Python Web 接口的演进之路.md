@@ -5,11 +5,13 @@ categories: ['Blog']
 tags: ['Python', 'WSGI', 'ASGI']
 ---
 
-        WSGI 和 ASGI 是 Python Web 框架中两种常见的 服务网关接口规范，用于定义 Web 应用程序与服务器之间如何通信。它们的区别主要体现在是否支持异步通信。
+WSGI 和 ASGI 是 Python Web 框架中两种常见的服务网关接口规范，用于定义 Web 应用程序与服务器之间如何通信。
+
+它们的区别主要体现在是否支持异步通信。
 
 ## 🧩 一、WSGI（Web Server Gateway Interface）
 
-        WSGI（Web Server Gateway Interface）是 Python 官方在 PEP 333 中提出的 Web 应用与服务器之间的标准通信协议，它的目标是让 Web 框架和 Web 服务器可以解耦、互换。
+WSGI（Web Server Gateway Interface）是 Python 官方在 PEP 333 中提出的 Web 应用与服务器之间的标准通信协议，它的目标是让 Web 框架和 Web 服务器可以解耦、互换。
 
 - 用途：是 Python Web 应用的 同步接口标准。
 
@@ -32,7 +34,7 @@ Browser ↔ Web Server ↔ WSGI Server ↔ Python Web App
 
 ## 🧩 二、ASGI（Asynchronous Server Gateway Interface）
 
-        随着 Web 应用对实时通信、高并发的需求增长，WSGI 显得力不从心。于是，ASGI（Asynchronous Server Gateway Interface）应运而生，它是 WSGI 的 “异步时代继任者”。
+随着 Web 应用对实时通信、高并发的需求增长，WSGI 显得力不从心。于是，ASGI（Asynchronous Server Gateway Interface）应运而生，它是 WSGI 的 “异步时代继任者”。
 
 - 用途：是对 WSGI 的升级，支持 异步编程。
 
