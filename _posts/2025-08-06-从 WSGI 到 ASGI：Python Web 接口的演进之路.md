@@ -5,9 +5,7 @@ categories: ['Blog']
 tags: ['Python', 'WSGI', 'ASGI']
 ---
 
-WSGI 和 ASGI 是 Python Web 框架中两种常见的服务网关接口规范，用于定义 Web 应用程序与服务器之间如何通信。
-
-它们的区别主要体现在是否支持异步通信。
+WSGI 和 ASGI 是 Python Web 框架中两种常见的服务网关接口规范，用于定义 Web 应用程序与服务器之间如何通信。它们的区别主要体现在是否支持异步通信。
 
 ## 🧩 一、WSGI（Web Server Gateway Interface）
 
