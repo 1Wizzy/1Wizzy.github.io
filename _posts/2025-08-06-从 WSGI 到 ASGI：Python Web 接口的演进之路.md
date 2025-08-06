@@ -56,7 +56,7 @@ Browser ↔ Web Server ↔ ASGI Server ↔ Async Python Web App
 ```
 
 ## 🔍三、 WSGI vs ASGI 对比一览
-<div align="center">
+
 
 | 特性        | WSGI                    | ASGI                     |
 | --------- | ----------------------- | ------------------------ |
@@ -67,7 +67,7 @@ Browser ↔ Web Server ↔ ASGI Server ↔ Async Python Web App
 | 典型框架      | Flask、Django         | FastAPI、Django（v3.0 以后） |
 | 服务端建议     | Gunicorn + WSGI workers | Uvicorn、Daphne、Hypercorn |
 
-</div>
+
 
 ## ✅ 四、总结
 - WSGI：适用于传统同步 Web 应用，结构稳定，生态成熟。
