@@ -4,6 +4,8 @@
 
 本项目基于Chirpy Starter主题，通过feishu2md从飞书上下载markdown文档，上传至Github仓库。
 
+⚠️ 目前飞书官方好像提供了文档下载为md的功能，可以考虑更换至官方方法。
+
 整个项目基本实现了全流程CI/CD，可通过GithubAction自动下载文档，自动部署博客。
 
 ## 需注意的问题
